@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eValidate - Email Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/"><b>
+                <img src="img/logo.svg" alt="email logo">
+                <span>eValidate</span></b></a></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="heading">
+                <h1>eValidate - The Email Validator</h1>
+            </div>
+            <h1>Enter your email to validate</h1>
+            <br>
+            <form action="">
+                <label for="username" class="email">Email:</label>
+                <br>
+                <input type="text" class="input-text" name="username" id="username" placeholder="Enter your email" required>
+                <br>
+                <input id="submitBtn" type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+        <div class="container">
+            <table>
+                <th>Your Results</th>
+                <tr id="resultContainer"></tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        Copyright © eValidate.com
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

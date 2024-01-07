@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ---------------------------- Header -------------------------------------- */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 12px 12px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: gray;
+}
+
+.logo img {
+    width: 18px;
+    filter: invert(1);
+}
+
+.logo span {
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ul > li > a:hover {
+    color: gray;
+}
+
+/* ------------------------------------ Main ----------------------------------------- */
+
+main {
+    min-height: 100vh;
+    background: rgb(151, 243, 30);
+}
+
+.change-my-color {
+    fill: rgb(151, 243, 30);
+}
+
+.container {
+    /* background-color: antiquewhite; */
+    max-width: 70vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.heading h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+}
+
+.heading p {
+    font-weight: 500;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+form {
+    font-size: larger;
+}
+
+input[type='text'] {
+    margin: 10px 0;
+    padding-left: 10px;
+    background: rgb(151, 243, 30);
+}
+
+.input-text {
+    width: 60vw;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#resultContainer div::first-letter {
+    text-transform: uppercase;
+}
+
+table, th, tr {
+    border: 2px solid black;
+    border-radius: 5px;
+    min-width: 50vh;
+}
+
+.email {
+    font-weight: bold;
+}
+
+/* ----------------------------------- Footer ---------------------------------------- */
+
+footer {
+    background: black;
+    color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+/* -------------------------------------- Media Query ---------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    
+    .container {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 5px 0;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 15px;
+        filter: invert(1);
+    }
+}
